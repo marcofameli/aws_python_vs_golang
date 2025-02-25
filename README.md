@@ -43,7 +43,7 @@ Este repositório contém um teste de desempenho entre funções Lambda escritas
     }
     ```
 
-2. Compile o código para o ambiente do AWS Lambda (Linux, arquitetura x86_64):
+2. Compile o código no terminal da IDE com o bash, usando comando a seguir funcionar no ambiente do AWS Lambda (Linux, arquitetura x86_64):
     ```sh
     GOOS=linux GOARCH=amd64 go build -o bootstrap main.go
     ```
@@ -102,7 +102,7 @@ Este repositório contém um teste de desempenho entre funções Lambda escritas
 - A função escrita em **Go** foi significativamente mais rápida que a versão em **Python**, com um tempo de execução aproximadamente **15x menor**.
 - Go se destaca para workloads de alta performance no AWS Lambda devido à sua eficiência de execução e baixo consumo de recursos.
 
-Go: 10 milhões de iterações, utilizando a biblioteca time para medir o tempo de execução.
-Python: O mesmo cálculo foi implementado, mas o número de iterações foi ajustado para 1 milhão de iterações (para tornar o teste mais equilibrado).
+- Go: 10 milhões de iterações, utilizando a biblioteca time para medir o tempo de execução.
+- Python: O mesmo cálculo foi implementado, mas o número de iterações foi ajustado para 1 milhão de iterações (para tornar o teste mais equilibrado).
 
 ---
