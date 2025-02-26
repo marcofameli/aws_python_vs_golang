@@ -43,7 +43,7 @@ Este repositório contém um teste de desempenho entre funções Lambda escritas
     }
     ```
 
-2. Compile o código no terminal da IDE com o bash, usando comando a seguir funcionar no ambiente do AWS Lambda (Linux, arquitetura x86_64):
+2. Compile o código no terminal da IDE com o bash, usando o comando abaixo para compilar e usar no ambiente do AWS Lambda (Linux, arquitetura x86_64):
     ```sh
     GOOS=linux GOARCH=amd64 go build -o bootstrap main.go
     ```
